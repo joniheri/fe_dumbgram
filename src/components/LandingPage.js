@@ -1,4 +1,12 @@
-import { Row, Col, Button, Modal, Form, Image } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Modal,
+  Form,
+  Image,
+} from "react-bootstrap";
 import React, { useState } from "react";
 
 // import image
@@ -11,23 +19,23 @@ function LandingPage() {
   const [show, setShow] = useState(false);
   const [smShow, setSmShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
-  const [loginShow, setLoginShow] = useState(false);
+  const [loginShow, setSigInShow] = useState(false);
   const [sigupShow, setSigUpShow] = useState(false);
   const onSwitchLogin = () => {
     setSigUpShow(false);
-    setLoginShow(true);
+    setSigInShow(true);
   };
   const onSwitchSigUp = () => {
-    setLoginShow(false);
+    setSigInShow(false);
     setSigUpShow(true);
   };
   //===================
 
   return (
-    <div className="container-fluid landing_page">
+    <Container fluid className="landing_page mr-min-10">
       <Row>
         <Col sm={6}>
-          <div style={{ marginLeft: "70px" }}>
+          <div style={{ marginLeft: "30px" }}>
             <Image
               src={img_wow}
               style={{
@@ -76,7 +84,7 @@ function LandingPage() {
                   marginRight: "30px",
                   color: "black",
                 }}
-                onClick={() => setLoginShow(true)}
+                onClick={() => setSigInShow(true)}
               >
                 Sign In
               </Button>
@@ -90,7 +98,7 @@ function LandingPage() {
 
       {/* SigUpModal============== */}
       <Modal
-        size="sm"
+        size=""
         show={sigupShow}
         onHide={() => setSigUpShow(false)}
         aria-labelledby="example-modal-sizes-title-sm"
@@ -108,6 +116,31 @@ function LandingPage() {
           <Form.Control
             type="password"
             placeholder="Password"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
             style={{ margin: "0 0 15px 0" }}
           />
           <Form.Control
@@ -145,14 +178,14 @@ function LandingPage() {
 
       {/* LoginModal============== */}
       <Modal
-        size="sm"
+        size=""
         show={loginShow}
-        onHide={() => setLoginShow(false)}
+        onHide={() => setSigInShow(false)}
         aria-labelledby="example-modal-sizes-title-sm"
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-sm">Sig In</Modal.Title>
+          <Modal.Title id="example-modal-sizes-title-sm">Login</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form.Control
@@ -242,7 +275,7 @@ function LandingPage() {
         <Modal.Body>...</Modal.Body>
       </Modal>
       {/* EndLargelModal============== */}
-    </div>
+    </Container>
   );
 }
 

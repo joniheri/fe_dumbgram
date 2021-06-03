@@ -6,13 +6,14 @@ import img_wow from "../img/WOW.png";
 import img_window from "../img/Window of World.png";
 import vector1 from "../img/Vector 1.png";
 
-function LandingPage() {
+function LandingPage(props) {
   //===================
   const [show, setShow] = useState(false);
   const [smShow, setSmShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
   const [loginShow, setLoginShow] = useState(false);
   const [sigupShow, setSigUpShow] = useState(false);
+
   const onSwitchLogin = () => {
     setSigUpShow(false);
     setLoginShow(true);
@@ -201,7 +202,7 @@ function LandingPage() {
       <Modal
         show={show}
         onHide={() => setShow(false)}
-        dialogClassName="modal-20w"
+        dialogClassName="modal-50w"
         aria-labelledby="example-custom-modal-styling-title"
         centered
       >
@@ -215,7 +216,6 @@ function LandingPage() {
         </Modal.Body>
       </Modal>
       {/* EndDefaultModal============== */}
-
       {/* SmallModal============== */}
       <Modal
         size="sm"
@@ -231,7 +231,6 @@ function LandingPage() {
         <Modal.Body>...</Modal.Body>
       </Modal>
       {/* EndSmallModal============== */}
-
       {/* LargelModal============== */}
       <Modal
         size="lg"
@@ -247,6 +246,26 @@ function LandingPage() {
         <Modal.Body>...</Modal.Body>
       </Modal>
       {/* EndLargelModal============== */}
+
+      {/* ModalWithGrid */}
+      <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Using Grid in Modal
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="show-grid">
+          <Container>
+            <Row>
+              <Col md={12}>.col-md-12</Col>
+            </Row>
+          </Container>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+      {/* EndModalWith grid */}
     </div>
   );
 }

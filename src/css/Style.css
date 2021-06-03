@@ -1,13 +1,20 @@
 .landing_page {
-  background-color: #e5e5e5;
-  margin-left: -20px;
   /* margin-right: -10px; */
   background-image: url("../img/Vector 1.png");
   background-repeat: no-repeat;
-  background-size: auto 657px;
+  background-size: 1260px 660px;
   background-position: right;
-  width: 1371px;
+  width: 1330px;
   height: 657px;
+}
+.bg-color-1 {
+  background-color: #e5e5e5;
+}
+.ml-min-20 {
+  margin-left: -20px;
+}
+.mr-min-10 {
+  margin-right: -15px;
 }
 .mt-1 {
   margin-top: 1px;
