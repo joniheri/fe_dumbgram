@@ -79,7 +79,7 @@ function LandingPage() {
               </Button>
               <Button
                 className="btn-register"
-                // onClick={() => setSigUpShow(true)}
+                onClick={() => setSigUpShow(true)}
               >
                 Register
               </Button>
@@ -148,19 +148,34 @@ function LandingPage() {
 
       {/* SigUpModal============== */}
       <Modal
-        size=""
+        className=""
+        size="sm"
         show={sigupShow}
         onHide={() => setSigUpShow(false)}
         aria-labelledby="example-modal-sizes-title-sm"
         centered
+        style={{ borderColor: "#1F1F1F  " }}
       >
-        <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-sm">Sig Up</Modal.Title>
+        <Modal.Header
+          className="bg-modal"
+          style={{ border: "0", color: "#fff" }}
+        >
+          <Modal.Title id="example-modal-sizes-title-sm">Register</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="bg-modal">
           <Form.Control
             type="email"
             placeholder="Email"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            style={{ margin: "0 0 15px 0" }}
+          />
+          <Form.Control
+            type="text"
+            placeholder="Username"
             style={{ margin: "0 0 15px 0" }}
           />
           <Form.Control
@@ -168,55 +183,25 @@ function LandingPage() {
             placeholder="Password"
             style={{ margin: "0 0 15px 0" }}
           />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
-          <Form.Control
-            type="text"
-            placeholder="Full Name"
-            style={{ margin: "0 0 15px 0" }}
-          />
           <Button
+            className="btn-register2"
             style={{
               width: "100%",
               margin: "20px 0 0 0",
-              backgroundColor: "#D60000",
-              borderColor: "#D60000",
             }}
           >
-            Sign Up
+            Register
           </Button>
           <center>
-            <p style={{ margin: "20px 0 20px 0" }}>
+            <p style={{ margin: "20px 0 20px 0", color: "#B1B1B1" }}>
               Already have an account..? Klik{" "}
               <strong
                 style={{
                   color: "black",
                   cursor: "pointer",
+                  color: "#B1B1B1",
                 }}
-                onClick={onSwitchLogin}
+                // onClick={onSwitchLogin}
               >
                 Here
               </strong>
@@ -228,7 +213,7 @@ function LandingPage() {
 
       {/* LoginModal============== */}
       <Modal
-        size=""
+        size="sm"
         show={loginShow}
         onHide={() => setSigInShow(false)}
         aria-labelledby="example-modal-sizes-title-sm"

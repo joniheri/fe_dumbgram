@@ -36,6 +36,32 @@
   background: #0b0b0b;
   box-shadow: #0b0b0b;
 }
+.bg-modal {
+  background: #1f1f1f;
+}
+.btn-bg1 {
+  background: #4b4b4b;
+}
+.btn-color1 {
+  color: #fff;
+}
+.btn-register2 {
+  background: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 36.46%,
+    #ff6b81 71.35%,
+    #fbdf63 100%
+  );
+  border-color: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 36.46%,
+    #ff6b81 71.35%,
+    #fbdf63 100%
+  );
+  color: #fff;
+}
 .bg-color-1 {
   background-color: #e5e5e5;
 }
