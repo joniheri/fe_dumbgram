@@ -71,10 +71,7 @@ function LandingPage() {
               creations.
             </p>
             <div style={{ marginTop: "50px" }}>
-              <Button
-                className="btn-login"
-                // onClick={() => setSigInShow(true)}
-              >
+              <Button className="btn-login" onClick={() => setSigInShow(true)}>
                 Login
               </Button>
               <Button
@@ -201,7 +198,7 @@ function LandingPage() {
                   cursor: "pointer",
                   color: "#B1B1B1",
                 }}
-                // onClick={onSwitchLogin}
+                onClick={onSwitchLogin}
               >
                 Here
               </strong>
@@ -219,10 +216,13 @@ function LandingPage() {
         aria-labelledby="example-modal-sizes-title-sm"
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header
+          className="bg-modal"
+          style={{ border: "0", color: "#fff" }}
+        >
           <Modal.Title id="example-modal-sizes-title-sm">Login</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="bg-modal">
           <Form.Control
             type="email"
             placeholder="Email"
@@ -234,21 +234,21 @@ function LandingPage() {
             style={{ margin: "0 0 15px 0" }}
           />
           <Button
+            className="btn-register2"
             style={{
               width: "100%",
               margin: "20px 0 0 0",
-              backgroundColor: "#D60000",
-              borderColor: "#D60000",
             }}
           >
             Sign Up
           </Button>
           <center>
-            <p style={{ margin: "20px 0 20px 0" }}>
+            <p style={{ margin: "20px 0 20px 0", color: "#B1B1B1" }}>
               Don't have an account..? Klik{" "}
               <strong
                 style={{
                   cursor: "pointer",
+                  color: "#B1B1B1",
                 }}
                 onClick={onSwitchSigUp}
               >
