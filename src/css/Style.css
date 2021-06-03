@@ -1,11 +1,40 @@
 .landing_page {
   /* margin-right: -10px; */
-  background-image: url("../img/Vector 1.png");
-  background-repeat: no-repeat;
-  background-size: 1260px 660px;
-  background-position: right;
-  width: 1330px;
-  height: 657px;
+  margin: 0px;
+  width: 1366px;
+  height: 800px;
+  background: #0b0b0b;
+}
+.btn-login {
+  width: 160px;
+  background: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 36.46%,
+    #ff6b81 71.35%,
+    #fbdf63 100%
+  );
+  border-color: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 36.46%,
+    #ff6b81 71.35%,
+    #fbdf63 100%
+  );
+  color: #fff;
+}
+.btn-register {
+  width: 160px;
+  background: #0b0b0b;
+  border-color: #0b0b0b;
+  margin-left: 30px;
+  color: #fff;
+}
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active {
+  background: #0b0b0b;
+  box-shadow: #0b0b0b;
 }
 .bg-color-1 {
   background-color: #e5e5e5;

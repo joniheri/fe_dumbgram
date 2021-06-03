@@ -6,13 +6,20 @@ import {
   Modal,
   Form,
   Image,
+  Card,
 } from "react-bootstrap";
 import React, { useState } from "react";
 
 // import image
-import img_wow from "../img/WOW.png";
-import img_window from "../img/Window of World.png";
-import vector1 from "../img/Vector 1.png";
+import Dumbgram from "../img/DumbGram.png";
+import Rectangle3 from "../img/Rectangle 3.png";
+import Rectangle4 from "../img/Rectangle 4.png";
+import Rectangle5 from "../img/Rectangle 5.png";
+import Rectangle6 from "../img/Rectangle 6.png";
+import Rectangle8 from "../img/Rectangle 8.png";
+import Rectangle9 from "../img/Rectangle 9.png";
+import Rectangle10 from "../img/Rectangle 10.png";
+import Rectangle12 from "../img/Rectangle 12.png";
 
 function LandingPage() {
   //===================
@@ -34,65 +41,108 @@ function LandingPage() {
   return (
     <Container fluid className="landing_page mr-min-10">
       <Row>
-        <Col sm={6}>
-          <div style={{ marginLeft: "30px" }}>
+        <Col md={5}>
+          <div style={{ marginLeft: "80px" }}>
             <Image
-              src={img_wow}
+              src={Dumbgram}
               style={{
                 width: "360px",
                 height: "auto",
                 marginTop: "100px",
-                marginLeft: "50px",
-              }}
-            />
-            <img
-              src={img_window}
-              style={{
-                width: "370px",
-                height: "auto",
-                marginTop: "-30px",
-                marginLeft: "33px",
               }}
             />
             <p
               style={{
-                fontSize: "25px",
-                marginTop: "20px",
-                marginLeft: "40px",
+                fontSize: "50px",
+                marginTop: "90px",
+                color: "#fff",
               }}
             >
-              Sign-up now and subscribe to enjoy all the cool and latest books -
-              The best book rental service provider in Indonesia.
+              Share your best photos or videos
             </p>
-            <div style={{ marginTop: "50px", marginLeft: "40px" }}>
+            <p
+              style={{
+                fontSize: "22px",
+                marginTop: "20px",
+                color: "#6A6A6A",
+              }}
+            >
+              Join now, share your creations with another people and enjoy other
+              creations.
+            </p>
+            <div style={{ marginTop: "50px" }}>
               <Button
-                style={{
-                  width: "160px",
-                  backgroundColor: "#D60000",
-                  borderColor: "#D60000",
-                  marginRight: "30px",
-                }}
-                onClick={() => setSigUpShow(true)}
+                className="btn-login"
+                // onClick={() => setSigInShow(true)}
               >
-                Sign Up
+                Login
               </Button>
               <Button
-                style={{
-                  width: "160px",
-                  backgroundColor: "#D8D8D8",
-                  borderColor: "#D8D8D8",
-                  marginRight: "30px",
-                  color: "black",
-                }}
-                onClick={() => setSigInShow(true)}
+                className="btn-register"
+                // onClick={() => setSigUpShow(true)}
               >
-                Sign In
+                Register
               </Button>
             </div>
           </div>
         </Col>
-        <Col sm={6}>
-          <div></div>
+        <Col md={7} style={{ marginTop: "100px", color: "#fff" }}>
+          <Row>
+            <Col sm={3} style={{ marginRight: "10px", padding: "0" }}>
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle6}
+              />
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle5}
+              />
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle10}
+              />
+            </Col>
+            <Col sm={3} style={{ marginRight: "10px", padding: "0" }}>
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle3}
+              />
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle9}
+              />
+            </Col>
+            <Col sm={3} style={{ padding: "0" }}>
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle4}
+              />
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle8}
+              />
+              <Image
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle12}
+              />
+            </Col>
+          </Row>
         </Col>
       </Row>
 

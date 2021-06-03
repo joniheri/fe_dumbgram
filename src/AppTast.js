@@ -2,11 +2,11 @@ import "./css/Style.css";
 import { Container } from "react-bootstrap";
 
 import LandingPage from "./components/LandingPage";
-import HomePage from "./components/HomePage";
+// import HomePage from "./components/HomePage";
 
 function AppTask() {
   return (
-    <Container fluid className="">
+    <Container fluid className="" style={{ padding: "0" }}>
       <LandingPage />
     </Container>
   );
