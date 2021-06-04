@@ -1,14 +1,6 @@
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  Modal,
-  Form,
-  Image,
-  Card,
-} from "react-bootstrap";
 import { useState, useContext } from "react";
+import { Row, Col, Button, Modal, Form, Image, Card } from "react-bootstrap";
+
 import { UserContext } from "../Context/userContext";
 
 // import image
@@ -22,7 +14,7 @@ import Rectangle9 from "../img/Rectangle 9.png";
 import Rectangle10 from "../img/Rectangle 10.png";
 import Rectangle12 from "../img/Rectangle 12.png";
 
-function LandingPage() {
+export default function CheckLogin() {
   //===================
   const [show, setShow] = useState(false);
   const [smShow, setSmShow] = useState(false);
@@ -315,5 +307,3 @@ function LandingPage() {
     </Row>
   );
 }
-
-export default LandingPage;

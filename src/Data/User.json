@@ -1,0 +1,14 @@
+[
+  {
+    "email": "admin@admin.com",
+    "pass": "123",
+    "name": "Bara Borneo",
+    "admin": true
+  },
+  {
+    "email": "user@user.com",
+    "pass": "123",
+    "name": "Bara Borneo",
+    "admin": false
+  }
+]

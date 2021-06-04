@@ -1,9 +1,12 @@
+.bg1 {
+  background: #0b0b0b;
+}
 .landing_page {
   /* margin-right: -10px; */
   margin: 0px;
-  width: 1366px;
-  height: 800px;
-  background: #0b0b0b;
+  width: auto;
+  height: auto;
+  /* background: #0b0b0b; */
 }
 .btn-login {
   width: 160px;
@@ -25,7 +28,7 @@
 }
 .btn-register {
   width: 160px;
-  background: #0b0b0b;
+  background: #232323;
   border-color: #0b0b0b;
   margin-left: 30px;
   color: #fff;
@@ -39,10 +42,9 @@
 .bg-modal {
   background: #1f1f1f;
 }
-.btn-bg1 {
+.input1,
+.input1:focus {
   background: #4b4b4b;
-}
-.btn-color1 {
   color: #fff;
 }
 .btn-register2 {
