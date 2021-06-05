@@ -4,27 +4,18 @@ import "./css/Style.css";
 // import react
 import React, { useState, useContext } from "react";
 
-// import bootstrap
-import { Container } from "react-bootstrap";
-
 // Import componens
-import CheckLogin from "./Components/CheckLogin";
-import LandingPage from "./Components/LandingPage";
-import { UserContextProvider } from "./Context/userContext";
+import Login from "./Components/Login";
+import Example from "./Components/Example";
+import { AppContextProvider } from "./Context/AppContext";
 
 function AppTask() {
   return (
-    <Container fluid style={{ padding: "0" }}>
-      <UserContextProvider>
-        {/* <CheckLogin /> */}
-        <LandingPage />
-        {/* {user.email != "" ? (
-        console.log("Login Success!")
-      ) : (
-        <LandingPage Login={Login} error={error} />
-      )} */}
-      </UserContextProvider>
-    </Container>
+    <AppContextProvider>
+      {" "}
+      {/* <Example /> */}
+      <Login />
+    </AppContextProvider>
   );
 }
 

@@ -9,7 +9,7 @@ import {
   Card,
 } from "react-bootstrap";
 import { useState, useContext } from "react";
-import { UserContext } from "../Context/userContext";
+import { AppContext } from "../Context/AppContext";
 
 // import image
 import Dumbgram from "../img/DumbGram.png";
@@ -39,11 +39,16 @@ function LandingPage() {
   };
   //===================
 
-  const [state, dispatch] = useContext(UserContext);
-  console.log(state.user);
+  const [state, dispatch] = useContext(AppContext);
+
+  const handleLogin = () => {
+    dispatch({
+      type: "LOGIN",
+    });
+  };
 
   return (
-    <Row style={{ margin: "100px 0 0 80px" }}>
+    <Row style={{ margin: "120px 0 0 100px" }}>
       <Col md={5} style={{ padding: "0 20px 50px 0" }}>
         <Image
           src={Dumbgram}
@@ -71,14 +76,18 @@ function LandingPage() {
           Join now, share your creations with another people and enjoy other
           creations.
         </p>
-        <div style={{ marginTop: "50px" }}>
-          <Button className="btn-login" onClick={() => setSigInShow(true)}>
-            Login
-          </Button>
-          <Button className="btn-register" onClick={() => setSigUpShow(true)}>
-            Register
-          </Button>
-        </div>
+        <Row style={{ marginTop: "50px" }}>
+          <Col sm={5}>
+            <Button className="btn-login" onClick={() => setSigInShow(true)}>
+              Login
+            </Button>
+          </Col>
+          <Col sm={5}>
+            <Button className="btn-register" onClick={() => setSigUpShow(true)}>
+              Register
+            </Button>
+          </Col>
+        </Row>
       </Col>
       <Col md={7}>
         <Row>
@@ -139,7 +148,7 @@ function LandingPage() {
         </Row>
       </Col>
 
-      {/* SigUpModal============== */}
+      {/* RegisterModal============== */}
       <Modal
         className=""
         size="sm"
@@ -194,7 +203,6 @@ function LandingPage() {
               Already have an account..? Klik{" "}
               <strong
                 style={{
-                  color: "black",
                   cursor: "pointer",
                   color: "#B1B1B1",
                 }}
@@ -206,7 +214,7 @@ function LandingPage() {
           </center>
         </Modal.Body>
       </Modal>
-      {/* EndSigUplModal============== */}
+      {/* EndRegisterlModal============== */}
 
       {/* LoginModal============== */}
       <Modal
@@ -224,6 +232,7 @@ function LandingPage() {
         </Modal.Header>
         <Modal.Body className="bg-modal">
           <Form.Control
+            required
             type="email"
             placeholder="Email"
             style={{ margin: "0 0 15px 0" }}
@@ -241,8 +250,9 @@ function LandingPage() {
               width: "100%",
               margin: "20px 0 0 0",
             }}
+            onClick={handleLogin}
           >
-            Sign Up
+            Login
           </Button>
           <center>
             <p style={{ margin: "20px 0 20px 0", color: "#B1B1B1" }}>

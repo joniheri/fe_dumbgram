@@ -2,13 +2,13 @@
   {
     "email": "admin@admin.com",
     "pass": "123",
-    "name": "Bara Borneo",
+    "name": "Jon Heri",
     "admin": true
   },
   {
     "email": "user@user.com",
     "pass": "123",
-    "name": "Bara Borneo",
+    "name": "Jon H",
     "admin": false
   }
 ]

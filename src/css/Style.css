@@ -1,7 +1,7 @@
 .bg1 {
   background: #0b0b0b;
 }
-.landing_page {
+.size-page1 {
   /* margin-right: -10px; */
   margin: 0px;
   width: auto;
@@ -9,7 +9,7 @@
   /* background: #0b0b0b; */
 }
 .btn-login {
-  width: 160px;
+  width: 100%;
   background: linear-gradient(
     90deg,
     #4dd4f7 0%,
@@ -25,12 +25,13 @@
     #fbdf63 100%
   );
   color: #fff;
+  margin-bottom: 20px;
 }
 .btn-register {
-  width: 160px;
+  width: 100%;
   background: #232323;
   border-color: #0b0b0b;
-  margin-left: 30px;
+  margin-bottom: 20px;
   color: #fff;
 }
 .btn-register:hover,
@@ -64,8 +65,40 @@
   );
   color: #fff;
 }
+.btn3 {
+  text-align: left;
+  background: #0b0b0b;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  color: #b1b1b1;
+  padding: 5px 10px 10px 10px;
+  margin: 0 0 20px 0;
+  border-radius: 2%;
+}
+.btn3:hover,
+.btn3:focus {
+  background: #1f1f1f;
+}
 .bg-color-1 {
   background-color: #e5e5e5;
+}
+.profile1 {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: linear-gradient(
+    90deg,
+    #4dd4f7 0%,
+    #9090fb 30.73%,
+    #ff6b81 68.75%,
+    #fbdf63 100%
+  );
+}
+.edit1 {
+  cursor: pointer;
 }
 .ml-min-20 {
   margin-left: -20px;
@@ -81,4 +114,13 @@
 }
 .mt-3 {
   margin-top: 1px;
+}
+
+@media only screen and (max-width: 905px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  /* .textAlign-center {
+    text-align: center;
+  } */
 }
