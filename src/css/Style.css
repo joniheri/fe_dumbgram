@@ -87,15 +87,13 @@
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: linear-gradient(
-    90deg,
-    #4dd4f7 0%,
-    #9090fb 30.73%,
-    #ff6b81 68.75%,
-    #fbdf63 100%
-  );
+  object-fit: cover;
+}
+.profile2 {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
 }
 .edit1 {
   cursor: pointer;

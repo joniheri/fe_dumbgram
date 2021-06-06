@@ -24,6 +24,10 @@ import Rectangle8 from "../img/Rectangle 8.png";
 import Rectangle9 from "../img/Rectangle 9.png";
 import Rectangle10 from "../img/Rectangle 10.png";
 import Rectangle12 from "../img/Rectangle 12.png";
+import Heart1 from "../img/Heart1.png";
+import Speechbubble1 from "../img/speech-bubble1.png";
+import Paperplane2 from "../img/paper-plane2.png";
+import EllipseZayn1 from "../img/EllipseZayn1.png";
 
 export default function FeedPage() {
   return (
@@ -37,24 +41,114 @@ export default function FeedPage() {
               padding: "0 10px 0 0",
             }}
           >
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle6}
-            />
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle5}
-            />
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle10}
-            />
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle6}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle5}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle10}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
           </Col>
           <Col
             sm={4}
@@ -62,18 +156,78 @@ export default function FeedPage() {
               padding: "0 10px 0 0",
             }}
           >
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle3}
-            />
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle9}
-            />
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle3}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle9}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
           </Col>
           <Col
             sm={4}
@@ -81,24 +235,114 @@ export default function FeedPage() {
               padding: "0 10px 0 0",
             }}
           >
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle4}
-            />
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle8}
-            />
-            <Card.Img
-              style={{
-                marginBottom: "10px",
-              }}
-              src={Rectangle12}
-            />
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle4}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle8}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
+            <Card className="bg1" style={{ padding: "0 0 20px 0" }}>
+              <Card.Img
+                style={{
+                  marginBottom: "10px",
+                }}
+                src={Rectangle12}
+              />
+              <Row>
+                <Col style={{ textAlign: "left" }}>
+                  <Card.Img
+                    className="profile2"
+                    src={EllipseZayn1}
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col style={{ textAlign: "right" }}>
+                  <Image
+                    src={Heart1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
+                  />
+                  <Row>
+                    <Col style={{ color: "#ABABAB", fontSize: "14px" }}>
+                      126.100 Like
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Card>
           </Col>
         </Row>
       </Col>

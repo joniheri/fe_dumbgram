@@ -41,15 +41,7 @@ import Bell1 from "../img/Bell1.png";
 import CreatePost from "../img/Create Post.png";
 import Paperplane1 from "../img/paper-plane 1.png";
 import Logout from "../img/Logout.png";
-
-import Rectangle3 from "../img/Rectangle 3.png";
-import Rectangle4 from "../img/Rectangle 4.png";
-import Rectangle5 from "../img/Rectangle 5.png";
-import Rectangle6 from "../img/Rectangle 6.png";
-import Rectangle8 from "../img/Rectangle 8.png";
-import Rectangle9 from "../img/Rectangle 9.png";
-import Rectangle10 from "../img/Rectangle 10.png";
-import Rectangle12 from "../img/Rectangle 12.png";
+import EllipseLisa from "../img/EllipseLisa.png";
 
 export default function MainAdmin() {
   const [state, dispatch] = useContext(AppContext);
@@ -65,8 +57,9 @@ export default function MainAdmin() {
     });
   };
   return (
-    <Router style={{ padding: "10px 0 10px 0" }}>
-      <Row>
+    <Router>
+      <Row style={{ padding: "10px 0 10px 0" }}>
+        {/* Left */}
         <Col
           sm={4}
           style={{
@@ -87,7 +80,7 @@ export default function MainAdmin() {
                 </div>
                 <center>
                   <div style={{ padding: "0 0 25px 0" }}>
-                    <Card.Img className="profile1" src={Rectangle4} />
+                    <Card.Img className="profile1" src={EllipseLisa} />
                   </div>
                   <div>
                     <h4 style={{ color: "#fff" }}>Lissa</h4>
@@ -203,6 +196,7 @@ export default function MainAdmin() {
             </Col>
           </Row>
         </Col>
+        {/* Left */}
 
         {/* Right */}
         <Col
