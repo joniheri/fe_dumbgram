@@ -20,6 +20,7 @@ import MessageEmpty from "../Pages/Message/MessageEmpty";
 import MessageDetail from "../Pages/Message/MessageDetail";
 import MessageSend from "../Pages/Message/MessageSend";
 import ProfilePage from "../Pages/ProfilePage";
+import CreatePostPage from "../Pages/CreatePostPage";
 
 // import bootstrap
 import { InputGroup, FormControl, Row, Col, Image } from "react-bootstrap";
@@ -59,6 +60,7 @@ export default function MainAdmin() {
                 <Route exact path="/messagepage" component={MessageFriend} />
                 <Route exact path="/messagedetail" component={MessageFriend} />
                 <Route exact path="/messagesend" component={MessageFriend} />
+                <Route exact path="/createpost" component={ProfilePage} />
               </Switch>
               {/* LeftContent */}
             </Col>
@@ -104,7 +106,7 @@ export default function MainAdmin() {
                   style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
                 />
               </Link>
-              <Link to="#">
+              <Link to="createpost">
                 <Image
                   src={CreatePost}
                   style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
@@ -120,6 +122,7 @@ export default function MainAdmin() {
             <Route exact path="/messagepage" component={MessageEmpty} />
             <Route exact path="/messagedetail" component={MessageDetail} />
             <Route exact path="/messagesend" component={MessageSend} />
+            <Route exact path="/createpost" component={CreatePostPage} />
           </Switch>
           {/* EndRightConten */}
         </Col>
