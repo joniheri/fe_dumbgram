@@ -80,6 +80,24 @@
 .btn3:focus {
   background: #1f1f1f;
 }
+.hover1:hover {
+  background: #1f1f1f;
+}
+.btn4 {
+  text-align: left;
+  background: #0b0b0b;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  color: #b1b1b1;
+  padding: 8px 10px 0 10px;
+  margin: 5 0 0 0;
+  border-radius: 2%;
+}
+.btn4:hover,
+.btn4:focus {
+  background: #1f1f1f;
+}
 .bg-color-1 {
   background-color: #e5e5e5;
 }
