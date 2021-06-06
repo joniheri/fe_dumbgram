@@ -21,6 +21,7 @@ import MessageDetail from "../Pages/Message/MessageDetail";
 import MessageSend from "../Pages/Message/MessageSend";
 import ProfilePage from "../Pages/ProfilePage";
 import CreatePostPage from "../Pages/CreatePostPage";
+import DetailFeed from "../Pages/DetailFeed";
 
 // import bootstrap
 import { InputGroup, FormControl, Row, Col, Image } from "react-bootstrap";
@@ -57,6 +58,7 @@ export default function MainAdmin() {
               {/* LeftContent */}
               <Switch>
                 <Route exact path="/" component={ProfilePage} />
+                <Route exact path="/explore" component={ProfilePage} />
                 <Route exact path="/messagepage" component={MessageFriend} />
                 <Route exact path="/messagedetail" component={MessageFriend} />
                 <Route exact path="/messagesend" component={MessageFriend} />
@@ -128,6 +130,7 @@ export default function MainAdmin() {
         </Col>
         {/* EndRight */}
       </Row>
+      <DetailFeed />
     </Router>
   );
 }

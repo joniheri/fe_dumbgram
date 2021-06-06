@@ -1,5 +1,5 @@
 // import react
-import React from "react";
+import React, { useState } from "react";
 
 // import bootstrap
 import {
@@ -28,8 +28,16 @@ import Heart1 from "../img/Heart1.png";
 import Speechbubble1 from "../img/speech-bubble1.png";
 import Paperplane2 from "../img/paper-plane2.png";
 import EllipseZayn1 from "../img/EllipseZayn1.png";
+import Ellipse2 from "../img/Ellipse2.png";
+import Ellipse4 from "../img/Ellipse4.png";
+import Ellipse5 from "../img/Ellipse5.png";
+import Rectangle11 from "../img/Rectangle11.png";
 
 export default function FeedPage() {
+  const [loginShow, setSigInShow] = useState(false);
+  const onSwitchLogin = () => {
+    setSigInShow(true);
+  };
   return (
     <Row>
       <Col>
@@ -45,8 +53,10 @@ export default function FeedPage() {
               <Card.Img
                 style={{
                   marginBottom: "10px",
+                  cursor: "pointer",
                 }}
-                src={Rectangle6}
+                src={Rectangle10}
+                onClick={() => setSigInShow(true)}
               />
               <Row>
                 <Col style={{ textAlign: "left" }}>
@@ -118,7 +128,7 @@ export default function FeedPage() {
                 style={{
                   marginBottom: "10px",
                 }}
-                src={Rectangle10}
+                src={Rectangle6}
               />
               <Row>
                 <Col style={{ textAlign: "left" }}>
@@ -346,6 +356,247 @@ export default function FeedPage() {
           </Col>
         </Row>
       </Col>
+
+      {/* LoginModal============== */}
+      <Modal
+        size="lg"
+        show={loginShow}
+        onHide={() => setSigInShow(false)}
+        aria-labelledby="example-modal-sizes-title"
+        centered
+      >
+        <Modal.Body
+          className="bg-modal"
+          style={{ color: "#fff", padding: "0", margin: "0" }}
+        >
+          <Row>
+            <Col sm={7} style={{ padding: "0", margin: "0" }}>
+              <Card.Img
+                src={Rectangle11}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </Col>
+            <Col sm={5} style={{ marginTop: "35px" }}>
+              <Row
+                style={{
+                  background: "#1f1f1f",
+                  borderRadius: "2%",
+                  margin: "0",
+                }}
+              >
+                <Col sm={1} style={{}}>
+                  <Image
+                    src={EllipseZayn1}
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      objectFit: "cover",
+                      padding: "0",
+                    }}
+                  />
+                </Col>
+                <Col sm={10} style={{ marginLeft: "15px" }}>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                    }}
+                  >
+                    Zayn
+                  </p>
+                </Col>
+              </Row>
+              <Row
+                style={{
+                  background: "#1f1f1f",
+                  borderRadius: "2%",
+                  margin: "0",
+                  marginBottom: "20px",
+                  borderBottom: "1px solid rgba(171, 171, 171, 0.3)",
+                }}
+              >
+                <Col sm={1} style={{}}>
+                  <div
+                    src={"#"}
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      objectFit: "cover",
+                      padding: "0",
+                    }}
+                  ></div>
+                </Col>
+                <Col sm={10} style={{ marginLeft: "15px" }}>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                      fontSize: "14px",
+                    }}
+                  >
+                    To Begin Again..
+                  </p>
+                </Col>
+              </Row>
+              <Row
+                style={{
+                  background: "#1f1f1f",
+                  borderRadius: "2%",
+                  margin: "0",
+                  marginBottom: "15px",
+                }}
+              >
+                <Col sm={1} style={{}}>
+                  <Image
+                    src={Ellipse4}
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      objectFit: "cover",
+                      padding: "0",
+                    }}
+                  />
+                </Col>
+                <Col sm={10} style={{ marginLeft: "15px" }}>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                    }}
+                  >
+                    abdul_h
+                  </p>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                    }}
+                  >
+                    Nice picture
+                  </p>
+                </Col>
+              </Row>
+              <Row
+                style={{
+                  background: "#1f1f1f",
+                  borderRadius: "2%",
+                  margin: "0",
+                  marginBottom: "15px",
+                }}
+              >
+                <Col sm={1} style={{}}>
+                  <Image
+                    src={Ellipse5}
+                    style={{
+                      width: "35px",
+                      height: "35px",
+                      objectFit: "cover",
+                      padding: "0",
+                    }}
+                  />
+                </Col>
+                <Col sm={10} style={{ marginLeft: "15px" }}>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                    }}
+                  >
+                    egi_lol
+                  </p>
+                  <p
+                    style={{
+                      padding: "0",
+                      margin: "0",
+                      color: "#b1b1b1",
+                    }}
+                  >
+                    goog vibe
+                  </p>
+                </Col>
+              </Row>
+              <div
+                style={{
+                  marginRight: "20px",
+                  marginLeft: "15px",
+                  marginBottom: "10px",
+                  marginTop: "30px",
+                  textAlign: "right",
+                }}
+              >
+                <Row
+                  style={{
+                    right: "50px",
+                    position: "absolute",
+                  }}
+                >
+                  <Image
+                    src={Heart1}
+                    style={{
+                      paddingLeft: "15px",
+                      cursor: "pointer",
+                      height: "15px",
+                      width: "auto",
+                    }}
+                  />
+                  <Image
+                    src={Speechbubble1}
+                    style={{
+                      paddingLeft: "15px",
+                      cursor: "pointer",
+                      height: "15px",
+                      width: "auto",
+                    }}
+                  />
+                  <Image
+                    src={Paperplane2}
+                    style={{
+                      paddingLeft: "15px",
+                      cursor: "pointer",
+                      height: "15px",
+                      width: "auto",
+                    }}
+                  />
+                </Row>
+                <Row>
+                  <Col
+                    style={{
+                      color: "#ABABAB",
+                      fontSize: "14px",
+                      marginTop: "17px",
+                    }}
+                  >
+                    126.100 Like
+                  </Col>
+                </Row>
+              </div>
+              <Row
+                style={{
+                  margin: "0",
+                  marginRight: "5px",
+                  marginLeft: "0px",
+                }}
+              >
+                <Col>
+                  <InputGroup className="mb-3">
+                    <FormControl
+                      className="input1"
+                      placeholder="Comment..."
+                      style={{ height: "40px", border: "0px solid" }}
+                    />
+                  </InputGroup>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Modal.Body>
+      </Modal>
+      {/* EndLoginlModal============== */}
     </Row>
   );
 }
