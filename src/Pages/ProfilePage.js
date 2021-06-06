@@ -50,7 +50,9 @@ export default function ProfilePage() {
         <Col>
           <div>
             <div style={{ textAlign: "right" }}>
-              <Image src={Edit1} className="edit1" />
+              <Link to="/editprofile">
+                <Image src={Edit1} className="edit1" />
+              </Link>
             </div>
             <center>
               <div style={{ padding: "0 0 25px 0" }}>

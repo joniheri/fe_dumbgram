@@ -20,18 +20,18 @@ import {
 } from "react-bootstrap";
 
 // import img
-import CreatePost2 from "../img/CreatePost2.png";
-import Upload from "../img/Upload.png";
+import UploadPhotos from "../img/UploadPhotos.png";
+import Save from "../img/Save.png";
 
-export default function CreatePostPage() {
+export default function EditProfilePage() {
   return (
     <div>
       <h3 className="mb-3" style={{ color: "#fff" }}>
-        Create Post
+        Edit Profile
       </h3>
       <Link to="#">
         <Image
-          src={CreatePost2}
+          src={UploadPhotos}
           style={{ cursor: "pointer", height: "40px", width: "auto" }}
           className="mb-3 mt-3"
         />
@@ -40,7 +40,23 @@ export default function CreatePostPage() {
         <FormControl
           name=""
           className="input1 mb-3"
-          placeholder="Caption..."
+          placeholder="Name"
+          style={{ border: "0px solid" }}
+        />
+      </InputGroup>
+      <InputGroup>
+        <FormControl
+          name=""
+          className="input1 mb-3"
+          placeholder="Username"
+          style={{ border: "0px solid" }}
+        />
+      </InputGroup>
+      <InputGroup>
+        <FormControl
+          name=""
+          className="input1 mb-3"
+          placeholder="Bio"
           as="textarea"
           rows={6}
           style={{ border: "0px solid" }}
@@ -49,7 +65,7 @@ export default function CreatePostPage() {
       <div align="right">
         <Link to="#">
           <Image
-            src={Upload}
+            src={Save}
             style={{ cursor: "pointer", height: "40px", width: "auto" }}
             className="mb-3 mt-3"
           />

@@ -32,7 +32,7 @@ import MessageDetail from "../Pages/Message/MessageDetail";
 import MessageSend from "../Pages/Message/MessageSend";
 import ProfilePage from "../Pages/ProfilePage";
 import CreatePostPage from "../Pages/CreatePostPage";
-import DetailFeed from "../Pages/DetailFeed";
+import EditProfilePage from "../Pages/EditProfilePage";
 
 // import img
 import Dumbgram1 from "../img/DumbGram1.png";
@@ -73,6 +73,7 @@ export default function MainAdmin() {
                 <Route exact path="/messagedetail" component={MessageFriend} />
                 <Route exact path="/messagesend" component={MessageFriend} />
                 <Route exact path="/createpost" component={ProfilePage} />
+                <Route exact path="/editprofile" component={ProfilePage} />
               </Switch>
               {/* LeftContent */}
             </Col>
@@ -259,12 +260,12 @@ export default function MainAdmin() {
             <Route exact path="/messagedetail" component={MessageDetail} />
             <Route exact path="/messagesend" component={MessageSend} />
             <Route exact path="/createpost" component={CreatePostPage} />
+            <Route exact path="/editprofile" component={EditProfilePage} />
           </Switch>
           {/* EndRightConten */}
         </Col>
         {/* EndRight */}
       </Row>
-      <DetailFeed />
     </Router>
   );
 }
