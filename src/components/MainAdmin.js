@@ -10,6 +10,17 @@ import {
   Redirect,
 } from "react-router-dom";
 
+// import bootstrap
+import {
+  InputGroup,
+  FormControl,
+  Row,
+  Col,
+  Image,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
+
 // import componen
 
 // import page
@@ -23,9 +34,6 @@ import ProfilePage from "../Pages/ProfilePage";
 import CreatePostPage from "../Pages/CreatePostPage";
 import DetailFeed from "../Pages/DetailFeed";
 
-// import bootstrap
-import { InputGroup, FormControl, Row, Col, Image } from "react-bootstrap";
-
 // import img
 import Dumbgram1 from "../img/DumbGram1.png";
 import Edit1 from "../img/edit1.png";
@@ -34,6 +42,8 @@ import Bell1 from "../img/Bell1.png";
 import CreatePost from "../img/Create Post.png";
 import Paperplane1 from "../img/paper-plane 1.png";
 import EllipseLisa from "../img/EllipseLisa.png";
+import Ellipse4 from "../img/Ellipse4.png";
+import Ellipse5 from "../img/Ellipse5.png";
 
 export default function MainAdmin() {
   return (
@@ -95,25 +105,149 @@ export default function MainAdmin() {
                 />
               </InputGroup>
             </Col>
-            <Col sm={6} style={{ textAlign: "right", padding: "0 15px 0 0" }}>
-              <Link to="#">
-                <Image
-                  src={Bell1}
-                  style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
-                />
-              </Link>
-              <Link to="/messagepage">
-                <Image
-                  src={Paperplane1}
-                  style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
-                />
-              </Link>
-              <Link to="createpost">
-                <Image
-                  src={CreatePost}
-                  style={{ padding: "0 0 10px 20px", cursor: "pointer" }}
-                />
-              </Link>
+            <Col sm={6}>
+              <Row
+                style={{
+                  position: "absolute",
+                  right: "0",
+                  marginRight: "0",
+                }}
+              >
+                {/* DropdownNotif */}
+                <Col>
+                  <div
+                    class="dropdown"
+                    style={{
+                      float: "right",
+                      marginTop: "5px",
+                      marginLeft: "15px",
+                    }}
+                  >
+                    <button class="dropbtn">
+                      <Image src={Bell1} />
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">
+                        <Row
+                          style={{
+                            margin: "0",
+                            marginBottom: "5px",
+                          }}
+                        >
+                          <Col sm={1} style={{}}>
+                            <Image
+                              src={Ellipse4}
+                              style={{
+                                width: "35px",
+                                height: "35px",
+                                objectFit: "cover",
+                                padding: "0",
+                              }}
+                            />
+                          </Col>
+                          <Col sm={10} style={{ marginLeft: "15px" }}>
+                            <p
+                              style={{
+                                padding: "0",
+                                margin: "0",
+                                color: "#b1b1b1",
+                                fontSize: "15px",
+                              }}
+                            >
+                              abdul_h
+                            </p>
+                            <p
+                              style={{
+                                padding: "0",
+                                margin: "0",
+                                color: "#b1b1b1",
+                                fontSize: "13px",
+                              }}
+                            >
+                              Nice picture
+                            </p>
+                          </Col>
+                        </Row>
+                      </a>
+                      <a href="#">
+                        <Row
+                          style={{
+                            margin: "0",
+                            marginBottom: "5px",
+                          }}
+                        >
+                          <Col sm={1} style={{}}>
+                            <Image
+                              src={Ellipse5}
+                              style={{
+                                width: "35px",
+                                height: "35px",
+                                objectFit: "cover",
+                                padding: "0",
+                              }}
+                            />
+                          </Col>
+                          <Col sm={10} style={{ marginLeft: "15px" }}>
+                            <p
+                              style={{
+                                padding: "0",
+                                margin: "0",
+                                color: "#b1b1b1",
+                                fontSize: "15px",
+                              }}
+                            >
+                              egi_lol
+                            </p>
+                            <p
+                              style={{
+                                padding: "0",
+                                margin: "0",
+                                color: "#b1b1b1",
+                                fontSize: "13px",
+                              }}
+                            >
+                              goog vibe
+                            </p>
+                          </Col>
+                        </Row>
+                      </a>
+                    </div>
+                  </div>
+                </Col>
+                {/* EndDropdownNotif */}
+
+                <Col
+                  style={{
+                    padding: "0",
+                    margin: "0",
+                    textAlign: "center",
+                  }}
+                >
+                  <Link to="/messagepage">
+                    <Image
+                      src={Paperplane1}
+                      style={{
+                        cursor: "pointer",
+                        marginTop: "5px",
+                        marginLeft: "0px",
+                      }}
+                    />
+                  </Link>
+                </Col>
+                <Col style={{ padding: "0", margin: "0" }}>
+                  <Link to="createpost">
+                    <Image
+                      src={CreatePost}
+                      style={{
+                        cursor: "pointer",
+                        marginLeft: "20px",
+                        marginTop: "2px",
+                        marginRight: "10px",
+                      }}
+                    />
+                  </Link>
+                </Col>
+              </Row>
             </Col>
           </Row>
 
