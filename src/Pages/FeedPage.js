@@ -1,6 +1,15 @@
 // import react
 import React, { useState } from "react";
 
+// import react-router-dom
+import {
+  BrowserRouter as Router,
+  Switch,
+  Link,
+  Route,
+  Redirect,
+} from "react-router-dom";
+
 // import bootstrap
 import {
   InputGroup,
@@ -357,7 +366,7 @@ export default function FeedPage() {
         </Row>
       </Col>
 
-      {/* LoginModal============== */}
+      {/* DetailFeedModal============== */}
       <Modal
         size="lg"
         show={loginShow}
@@ -385,15 +394,17 @@ export default function FeedPage() {
                 }}
               >
                 <Col sm={1} style={{}}>
-                  <Image
-                    src={EllipseZayn1}
-                    style={{
-                      width: "35px",
-                      height: "35px",
-                      objectFit: "cover",
-                      padding: "0",
-                    }}
-                  />
+                  <Link to="/profilepeople">
+                    <Image
+                      src={EllipseZayn1}
+                      style={{
+                        width: "35px",
+                        height: "35px",
+                        objectFit: "cover",
+                        padding: "0",
+                      }}
+                    />
+                  </Link>
                 </Col>
                 <Col sm={10} style={{ marginLeft: "15px" }}>
                   <p
@@ -596,7 +607,7 @@ export default function FeedPage() {
           </Row>
         </Modal.Body>
       </Modal>
-      {/* EndLoginlModal============== */}
+      {/* EndDetailFeedlModal============== */}
     </Row>
   );
 }

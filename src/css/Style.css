@@ -163,7 +163,11 @@
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: #0b0b0b;
+  background-color: #4b4b4b;
+  border-end-start-radius: 2%;
+  border-end-end-radius: 2%;
+  border-start-start-radius: 2%;
+  border-start-end-radius: 2%;
 }
 .dropdown:hover .dropdown-content {
   display: block;

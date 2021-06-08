@@ -33,6 +33,8 @@ import MessageSend from "../Pages/Message/MessageSend";
 import ProfilePage from "../Pages/ProfilePage";
 import CreatePostPage from "../Pages/CreatePostPage";
 import EditProfilePage from "../Pages/EditProfilePage";
+import ProfilePeoplePage from "../Pages/ProfilePeoplePage";
+import FeedPeoplePage from "../Pages/FeedPeoplePage";
 
 // import img
 import Dumbgram1 from "../img/DumbGram1.png";
@@ -74,6 +76,11 @@ export default function MainAdmin() {
                 <Route exact path="/messagesend" component={MessageFriend} />
                 <Route exact path="/createpost" component={ProfilePage} />
                 <Route exact path="/editprofile" component={ProfilePage} />
+                <Route
+                  exact
+                  path="/profilepeople"
+                  component={ProfilePeoplePage}
+                />
               </Switch>
               {/* LeftContent */}
             </Col>
@@ -261,6 +268,7 @@ export default function MainAdmin() {
             <Route exact path="/messagesend" component={MessageSend} />
             <Route exact path="/createpost" component={CreatePostPage} />
             <Route exact path="/editprofile" component={EditProfilePage} />
+            <Route exact path="/profilepeople" component={FeedPeoplePage} />
           </Switch>
           {/* EndRightConten */}
         </Col>
