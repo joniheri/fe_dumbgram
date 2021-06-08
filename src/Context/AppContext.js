@@ -4,7 +4,7 @@ import User from "../Data/User.json";
 export const AppContext = createContext();
 
 const initialState = {
-  isLogin: true,
+  isLogin: false,
   photos: [],
   user: User,
 };
